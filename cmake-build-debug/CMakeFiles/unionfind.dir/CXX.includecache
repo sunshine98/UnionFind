@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Administrator/CLionProjects/unionfind/UnionFind1.h
+iostream
+-
+cassert
+-
+
+C:/Users/Administrator/CLionProjects/unionfind/UnionFindTestHelper.h
+iostream
+-
+ctime
+-
+cstdlib
+-
+UnionFind1.h
+C:/Users/Administrator/CLionProjects/unionfind/UnionFind1.h
+
+C:/Users/Administrator/CLionProjects/unionfind/main.cpp
+iostream
+-
+UnionFindTestHelper.h
+C:/Users/Administrator/CLionProjects/unionfind/UnionFindTestHelper.h
+

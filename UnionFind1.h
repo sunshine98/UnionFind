@@ -28,7 +28,7 @@ namespace UF1{
         }
         //查找元素P所对应的集合编号
         int find(int p){
-            assert(p>0&&p<count);//确保查询的范围
+            assert(p>=0&&p<count);//确保查询的范围
             return id[p];//返回p元素所属的集合编号
         }
         //查询两个元素是否在同一个集合中

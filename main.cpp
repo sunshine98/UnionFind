@@ -1,6 +1,10 @@
 #include <iostream>
+#include "UnionFindTestHelper.h"
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int n=10000;
+    UnionFindTestHelper::TestUF1(n);
+
     return 0;
 }
