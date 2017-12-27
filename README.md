@@ -4,7 +4,7 @@
 - [x] 基础版本的并查集
 - [x] QuickFind
 - [x] QuickUnion
-- [ ] 基于Size对并查集的优化
+- [x] 基于Size对并查集的优化
 - [ ] 基于rank对并查集的优化
 - [ ] 并查集的路径压缩优化 
 

@@ -86,6 +86,9 @@
 		<Unit filename="C:/Users/Administrator/CLionProjects/unionfind/UnionFind2.h">
 			<Option target="unionfind"/>
 		</Unit>
+		<Unit filename="C:/Users/Administrator/CLionProjects/unionfind/UnionFind3.h">
+			<Option target="unionfind"/>
+		</Unit>
 		<Unit filename="C:/Users/Administrator/CLionProjects/unionfind/UnionFindTestHelper.h">
 			<Option target="unionfind"/>
 		</Unit>

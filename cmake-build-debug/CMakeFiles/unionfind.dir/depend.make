@@ -3,6 +3,7 @@
 
 CMakeFiles/unionfind.dir/main.cpp.obj: ../UnionFind1.h
 CMakeFiles/unionfind.dir/main.cpp.obj: ../UnionFind2.h
+CMakeFiles/unionfind.dir/main.cpp.obj: ../UnionFind3.h
 CMakeFiles/unionfind.dir/main.cpp.obj: ../UnionFindTestHelper.h
 CMakeFiles/unionfind.dir/main.cpp.obj: ../main.cpp
 

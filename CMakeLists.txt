@@ -3,4 +3,4 @@ project(unionfind)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(unionfind main.cpp UnionFind1.h UnionFindTestHelper.h UnionFind2.h)
+add_executable(unionfind main.cpp UnionFind1.h UnionFindTestHelper.h UnionFind2.h UnionFind3.h)
