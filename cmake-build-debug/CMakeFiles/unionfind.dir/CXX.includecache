@@ -12,6 +12,10 @@ iostream
 cassert
 -
 
+C:/Users/Administrator/CLionProjects/unionfind/UnionFind2.h
+cassert
+-
+
 C:/Users/Administrator/CLionProjects/unionfind/UnionFindTestHelper.h
 iostream
 -
@@ -21,6 +25,8 @@ cstdlib
 -
 UnionFind1.h
 C:/Users/Administrator/CLionProjects/unionfind/UnionFind1.h
+UnionFind2.h
+C:/Users/Administrator/CLionProjects/unionfind/UnionFind2.h
 
 C:/Users/Administrator/CLionProjects/unionfind/main.cpp
 iostream
