@@ -22,6 +22,12 @@ cassert
 array
 -
 
+C:/Users/Administrator/CLionProjects/unionfind/UnionFind4.h
+cassert
+-
+array
+-
+
 C:/Users/Administrator/CLionProjects/unionfind/UnionFindTestHelper.h
 iostream
 -
@@ -35,6 +41,8 @@ UnionFind2.h
 C:/Users/Administrator/CLionProjects/unionfind/UnionFind2.h
 UnionFind3.h
 C:/Users/Administrator/CLionProjects/unionfind/UnionFind3.h
+UnionFind4.h
+C:/Users/Administrator/CLionProjects/unionfind/UnionFind4.h
 
 C:/Users/Administrator/CLionProjects/unionfind/main.cpp
 iostream
