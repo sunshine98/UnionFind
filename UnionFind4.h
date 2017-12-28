@@ -34,18 +34,17 @@ namespace UF4{
             delete []parent;
             delete []rank;
         }
-        //找出元素p位于的集合的编号
+        //找出元素p位于的集合的编号，同时进行路径压缩操作
         //即返回根元素
         int find(int p){
             assert(p>=0&&p<count);//防止数组越界
-            while(p != parent[p]){//如果p元素的父亲指针指向的不是自己，说明p并不是集合中的根元素，还需要一直向上查找和路径压缩
-                //在find查询中嵌入一个路径压缩操作
-                parent[p]=parent[parent[p]];
-                //p元素不再选择原来的父亲节点，而是直接选择父亲节点的父亲节点来做为自己新的一个父亲节点
-                //这样的操作使得树的层数被压缩了
-                p=parent[p];//p压缩完毕后且p并不是根节点，p变成p新的父节点继续进行查找和压缩的同时操作
+            if(p==parent[p]) {//此时p为根节点
+                return p;//返回该结合的根节点
             }
-            return p;//经过while循环后，p=parent[p],一定是一个根节点，且不能够再进行压缩了,我们返回即可
+            else{//此时遍历的不为根节点
+                parent[p]=find(parent[p]);//通过递归条用find（parent[p])来向上访问元素，并且把找到的根元素赋值给节点的父亲指针
+                return parent[p];//返回此时访问的节点的父亲指针指向的节点，也就是这个集合的根节点
+            }
         }
         //判断两个元素是否位于同一个集合当中
         bool isconnected(int p,int q){
