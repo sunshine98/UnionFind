@@ -13,7 +13,7 @@ namespace UF4{
     private:
         int* parent;//parent指针指向一个专门用来记录元素父亲元素的指针
         int count;//记录集合中元素的数量
-        int *rank;
+        int *rank;//rank[i]表示以i为根的集合的层数
     public:
         UnionFind4(int n){
             parent=new int[n];//初始化parent数组
@@ -38,10 +38,14 @@ namespace UF4{
         //即返回根元素
         int find(int p){
             assert(p>=0&&p<count);//防止数组越界
-            while(p != parent[p]){//如果p元素的父亲指针指向的不是自己，说明p并不是集合中的根元素，还需要一直向上查找
-                p=parent[p];//p变成其父亲
+            while(p != parent[p]){//如果p元素的父亲指针指向的不是自己，说明p并不是集合中的根元素，还需要一直向上查找和路径压缩
+                //在find查询中嵌入一个路径压缩操作
+                parent[p]=parent[parent[p]];
+                //p元素不再选择原来的父亲节点，而是直接选择父亲节点的父亲节点来做为自己新的一个父亲节点
+                //这样的操作使得树的层数被压缩了
+                p=parent[p];//p压缩完毕后且p并不是根节点，p变成p新的父节点继续进行查找和压缩的同时操作
             }
-            return p;//经过while循环后，p=parent[p],一定是一个根节点，我们返回即可
+            return p;//经过while循环后，p=parent[p],一定是一个根节点，且不能够再进行压缩了,我们返回即可
         }
         //判断两个元素是否位于同一个集合当中
         bool isconnected(int p,int q){

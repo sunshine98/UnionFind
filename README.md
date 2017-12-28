@@ -6,7 +6,8 @@
 - [x] QuickUnion
 - [x] 基于Size对并查集的优化
 - [x] 基于rank对并查集的优化
-- [ ] 并查集的路径压缩优化 
+- [x] 基于循环的并查集的路径压缩优化
+- [ ] 基于递归的并查集的路径压缩优化
 
 ## 如果您觉得我的文章对您有用，您可以给我打赏一定的金额鼓励我的前进 
 <img src="http://ww1.sinaimg.cn/large/0060lm7Tly1fmlyfhapirj30p00qadj6.jpg" width = "500" height = "500" alt="图片名称" align=center />
