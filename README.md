@@ -13,9 +13,9 @@
 
 项目 | 描述语言 | 类型
 :---:|:--------:|:----:
-二叉树 | C++ | 数据结构与算法
-并查集 | C++ | 数据结构与算法 
-图     | C++ | 数据结构与算法
+[二叉树](https://github.com/sunshine98/binary-tree) | C++ | 数据结构与算法
+[并查集](https://github.com/sunshine98/UnionFind) | C++ | 数据结构与算法 
+[图](https://github.com/sunshine98/GraphBasics)     | C++ | 数据结构与算法
 
 
 
